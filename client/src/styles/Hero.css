@@ -1,0 +1,92 @@
+.hero {
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 40px 20px;
+  padding-top: 60px;
+  background-color:#58141e;
+  background-image: repeating-linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.04) 0px,
+    rgba(255, 255, 255, 0.04) 2px,
+    transparent 2px,
+    transparent 18px
+  );
+}
+
+.hero-overlay {
+  max-width: 1000px;
+  color: #fbf1e0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-direction: column;
+}
+
+.hero-title {
+  font-family: "Playfair Display", serif;
+  font-size: 4.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  line-height: 1.1;
+  color: #fffdf9;
+  max-width: 900px;
+}
+
+.hero-subtitle {
+  font-size: 1.2rem;
+  color: #fadd93;
+  margin-bottom: 24px;
+  line-height: 1.4;
+  max-width: 650px;
+  margin: auto;
+  text-align: center;
+
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.btn {
+  padding: 15px 30px;
+  border-radius: 6px;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  transition: all 0.2s ease;
+  display: inline-block;
+}
+
+.btn-outline {
+  background: transparent;
+  border: 1px solid #fbf1e0;
+  color: #fbf1e0;
+}
+
+.btn-outline:hover {
+  background: #fbf1e0;
+  color: #46121a;
+}
+
+.btn-gold {
+  background-color: #ffbe45;
+  color: #241e1a;
+}
+
+.btn-gold:hover {
+  background-color: #f0d89b;
+}
+
+@media (max-width: 600px) {
+  .hero-title {
+    font-size: 2.1rem;
+  }
+}

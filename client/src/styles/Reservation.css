@@ -1,0 +1,176 @@
+.reservation-page {
+  display: flex;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.reservation-left {
+  flex: 0 0 42%;
+  background-color: #6b1e2a;
+  background-image: none;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 60px 50px;
+  position: relative;
+}
+
+.back-link {
+  position: absolute;
+  top: 30px;
+  right: 40px;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 0.9rem;
+  opacity: 0.85;
+}
+
+.back-link:hover {
+  opacity: 1;
+  text-decoration: underline;
+}
+
+.left-content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.left-content h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.1rem;
+  margin-bottom: 6px;
+}
+
+.left-content .tagline {
+  color: #e6c7cc;
+  font-size: 0.95rem;
+  margin-bottom: auto;
+}
+
+.left-content .quote {
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-style: italic;
+  font-size: 1.3rem;
+  line-height: 1.6;
+  max-width: 400px;
+  padding-top: 20px;
+  position: relative;
+  font-weight: 700;
+}
+
+.left-content .quote::before {
+  content: '';
+  display: block;
+  width: 45px;
+  height: 3px;
+  background: #C9A24B;
+  margin-bottom: 20px;
+}
+
+.reservation-right {
+  flex: 0 0 58%;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 60px;
+}
+
+.form-box {
+  width: 100%;
+  max-width: 420px;
+}
+
+.form-box h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.1rem;
+  color: #1a1a2e;
+  margin-bottom: 8px;
+}
+
+.form-box .subtitle {
+  color: #777;
+  font-size: 0.95rem;
+  margin-bottom: 30px;
+}
+
+.form-box form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-box label {
+  font-weight: 600;
+  color: #333;
+  font-size: 0.9rem;
+  margin-bottom: -10px;
+  display: block;
+}
+
+.form-box input {
+  width: 100%;
+  padding: 14px 16px;
+  border: 1px solid #dcdcdc;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.form-box input:focus {
+  border-color: #6b1e2a;
+}
+
+.form-box button {
+  margin-top: 10px;
+  padding: 15px;
+  background: #C9A24B;
+  color: #1a1a2e;
+  font-weight: 600;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.form-box button:hover {
+  background: #b8913f;
+}
+
+.form-box button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.form-box .message {
+  text-align: center;
+  margin-top: 15px;
+  color: #6b1e2a;
+  font-weight: 500;
+}
+
+.form-box .toggle-link {
+  text-align: center;
+  color: #666;
+  font-size: 0.9rem;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.form-box .toggle-link:hover {
+  color: #6b1e2a;
+}
+
+@media (max-width: 768px) {
+  .reservation-page {
+    flex-direction: column;
+  }
+  .reservation-left,
+  .reservation-right {
+    flex: 1 1 auto;
+    padding: 40px 25px;
+  }
+}

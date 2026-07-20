@@ -1,0 +1,403 @@
+.dashboard-page {
+  min-height: 100vh;
+  background: #fff7f7;
+  padding: 30px 50px;
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 30px;
+}
+
+.dashboard-header h1 {
+  font-family: 'Playfair Display', serif;
+  color: #1a1a2e;
+  font-size: 1.8rem;
+}
+
+.logout-btn {
+  padding: 10px 20px;
+  background: #f0f0f0;
+  color: #333;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.logout-btn:hover {
+  background: #e0e0e0;
+}
+
+.dashboard-welcome {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-bottom: 20px;
+}
+
+.avatar {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background: #ffae00;
+  color: #2B1010;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.dashboard-welcome h2 {
+  font-family: 'Playfair Display', serif;
+  color: #1a1a2e;
+  font-size: 1.5rem;
+  margin-bottom: 4px;
+}
+
+.dashboard-welcome p {
+  color: #777;
+  font-size: 0.95rem;
+}
+
+.dashboard-stats {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 35px;
+}
+
+.stat-pill {
+  padding: 8px 18px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.stat-pill.pink {
+  background: #f7dfe2;
+  color: #6b1e2a;
+}
+
+.stat-pill.blue {
+  background: #dde6f7;
+  color: #1c3a6b;
+}
+
+.dashboard-content {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.new-reservation-card,
+.reservations-list-card {
+  flex: 1;
+  min-width: 320px;
+  background: #fff;
+  border-radius: 10px;
+  padding: 30px;
+  border: 1px solid #eee;
+}
+
+.card-title-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.new-reservation-card h3,
+.reservations-list-card h3 {
+  font-family: 'Playfair Display', serif;
+  color: #1a1a2e;
+  font-size: 1.3rem;
+}
+
+.cancel-edit-link {
+  color: #6b1e2a;
+  font-size: 0.9rem;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.cancel-edit-link:hover {
+  text-decoration: underline;
+}
+
+.new-reservation-card form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.form-row {
+  display: flex;
+  gap: 16px;
+}
+
+.form-row > div {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.new-reservation-card label {
+  font-weight: 600;
+  color: #333;
+  font-size: 0.9rem;
+}
+
+.new-reservation-card input,
+.new-reservation-card select {
+  padding: 12px 14px;
+  border: 1px solid #D9CFC4;
+  border-radius: 6px;
+  font-size: 1rem;
+  outline: none;
+  background: #fff7f7;
+}
+
+.new-reservation-card input:focus,
+.new-reservation-card select:focus {
+  border-color: #6b1e2a;
+}
+
+.guest-counter {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.guest-counter button {
+  width: 36px;
+  height: 36px;
+  border-radius: 6px;
+  border: 1px solid #D9CFC4;
+  background: #fff7f7;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.guest-counter button:hover {
+  background: #f0f0f0;
+}
+
+.guest-counter span {
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.guest-label {
+  color: #999;
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+
+.confirm-btn {
+  margin-top: 10px;
+  padding: 14px;
+  background: #ffae00;
+  color: #2B1010;
+  font-weight: 600;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.confirm-btn:hover {
+  background: #ffb515;
+}
+
+.confirm-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.new-reservation-card .message {
+  text-align: center;
+  margin-top: 10px;
+  color: #6b1e2a;
+  font-weight: 500;
+}
+
+.empty-text {
+  color: #999;
+  font-size: 0.95rem;
+}
+
+.reservation-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px 0;
+  border-bottom: 1px solid #eee;
+  flex-wrap: wrap;
+}
+
+.reservation-item:last-child {
+  border-bottom: none;
+}
+
+.date-badge {
+  width: 55px;
+  height: 55px;
+  border-radius: 8px;
+  background: #1c2b4a;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.badge-month {
+  font-size: 0.7rem;
+  color: #f8bc3a;
+  font-weight: 600;
+}
+
+.badge-day {
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.reservation-info {
+  flex: 1;
+  min-width: 140px;
+}
+
+.res-time {
+  font-weight: 600;
+  color: #333;
+  font-size: 0.95rem;
+}
+
+.res-name {
+  color: #999;
+  font-size: 0.85rem;
+}
+
+.status-pill {
+  background: #fff7f7;
+  color: #1c3a6b;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.status-pill.upcoming {
+  background: #fff7f7;
+  color: #6b1e2a;
+}
+
+.link-btn {
+  background: none;
+  border: none;
+  color: #1c3a6b;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.link-btn.delete {
+  color: #b23a3a;
+}
+
+.link-btn:hover {
+  text-decoration: underline;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.modal-box {
+  background: #fff7f7;
+  padding: 32px;
+  border-radius: 12px;
+  max-width: 420px;
+  width: 90%;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+}
+
+.modal-box h3 {
+  font-family: 'Playfair Display', serif;
+  color: #1a1a2e;
+  font-size: 1.4rem;
+  margin-bottom: 14px;
+}
+
+.modal-box p {
+  color: #555;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin-bottom: 25px;
+}
+
+.modal-actions {
+  display: flex;
+  gap: 12px;
+}
+
+.keep-btn {
+  flex: 1;
+  padding: 13px;
+  background: #f0f0f0;
+  color: #333;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.keep-btn:hover {
+  background: #e2e2e2;
+}
+
+.delete-btn-confirm {
+  flex: 1;
+  padding: 13px;
+  background: #b23a3a;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.delete-btn-confirm:hover {
+  background: #942e2e;
+}
+
+@media (max-width: 900px) {
+  .dashboard-content {
+    flex-direction: column;
+  }
+  .form-row {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) {
+  .dashboard-page {
+    padding: 20px;
+  }
+}

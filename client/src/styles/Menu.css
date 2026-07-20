@@ -1,0 +1,129 @@
+.menu-section {
+  padding: 80px 20px;
+  text-align: center;
+  background: #fffdf9;
+}
+
+.menu-heading {
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 2.4rem;
+  color: #6b1e2a;
+  margin-bottom: 8px;
+}
+
+.menu-subheading {
+  font-family: "Inter",serif;
+  color: #7c8b5f;
+  margin-bottom: 40px;
+}
+
+.menu-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 48px;
+  flex-wrap: wrap;
+}
+
+.menu-tab {
+  padding: 10px 26px;
+  border-radius: 999px;
+  border: none;
+  background: #fbf1e0;
+  color: #46121a;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.menu-tab:hover {
+  background: #f0d89b;
+}
+
+.menu-tab.active {
+  background: #6b1e2a;
+  color: #fffdf9;
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.menu-card {
+  background: #fbf1e0;
+  border: 1px solid #f0d89b;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.menu-card-photo {
+  height: 170px;
+  display: flex;
+  align-items: flex-end;
+  padding: 10px;
+  font-size: 0.7rem;
+  color: #7c8b5f;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  background-image: repeating-linear-gradient(
+    135deg,
+    #f0d89b 0px,
+    #f0d89b 2px,
+    #fbf1e0 2px,
+    #fbf1e0 16px
+  );
+}
+
+.menu-card-body {
+  padding: 18px 20px;
+}
+
+.menu-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 6px;
+}
+
+.menu-card-top h3 {
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 1.1rem;
+  color: #6b1e2a;
+}
+
+.menu-price {
+  color: #b23a2e;
+  font-weight: 600;
+  white-space: nowrap;
+  margin-left: 10px;
+}
+
+.menu-card-body p {
+  color: #241e1a;
+  font-size: 0.9rem;
+  opacity: 0.75;
+}
+.menu-card {
+  background: #fbf1e0;
+  border: 1px solid #f0d89b;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.menu-card-photo {
+  width: 100%;
+  height: 170px;
+  object-fit: cover;
+  display: block;
+}
+
+@media (max-width: 900px) {
+  .menu-grid {
+    grid-template-columns: 1fr;
+  }
+}

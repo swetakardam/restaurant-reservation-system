@@ -1,0 +1,70 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 60px;
+  background: #fffdf9;
+  border-bottom: 1px solid #f0d89b;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  font-family: "Playfair Display", serif;
+  font-size: 27px;
+  font-weight: 700;
+  color: #6b1e2a;
+}
+
+
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 28px;
+  margin: 0;
+  padding: 0;
+ 
+}
+
+.nav-links a {
+  font-family: "Inter",sans-serif;
+  font-size: 15px;
+  text-decoration: none;
+  color: #241e1a;
+  font-weight: 500;
+  transition: color 0.2s ease;
+   justify-content: center;
+  align-items: center;
+  
+}
+
+.nav-links a:hover {
+  color: #d9a441;
+}
+
+.book-btn {
+  font-family: "Inter",sans-serif;
+  font-size: 15px;
+  background: #6b1e2a;
+  color: #fffdf9;
+  border: none;
+  padding: 10px 22px;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.book-btn:hover {
+  background: #46121a;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+}
